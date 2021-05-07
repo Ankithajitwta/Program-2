@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        table{       
+        border: 20px groove;
+        background-color:pink;
+        margin: auto; 
+      }
+.blink{
+        margin:40px;
+        background-color: black;
+        padding: 20px;
+        text-align: center;
+        line-height: 100px;
+    }
+    span{
+        font-size: 30px;
+        color: darkgrey;
+        animation: blink 1s linear infinite;
+    }
+@keyframes blink{
+                    0%{opacity: 0;}
+                    70%{opacity: .5;}
+                    100%{opacity: 1;}
+                }
+    </style>            
+
+    <title>Squares and Cubes</title>
+</head>
+    <body>
+        <table border="10" align="center">
+            <tr>
+            <td colspan="4"><center>Squares and Cubes </center></td>
+            </tr>
+            <tr>
+            <td>NUMBER</td>
+            <td>SQUARE</td>
+            <td>CUBES</td>
+            </tr>
+            <script type="text/javascript">
+                for(var i=0; i<=10; i=i+1)
+                {
+                    document.write("<tr align='center'><td>" + i + "</td><td>" + i*i +"</td><td>" + i*i*i + "</td></tr>")
+                }
+            </script>
+        </table>
+     <center><h3= class="blink"><span>CHALLENGE DONE :)</span></h3></center>
+    </body>
+</html>
